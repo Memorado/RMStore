@@ -33,10 +33,9 @@ Pod::Spec.new do |s|
     arv.source_files = 'RMStore/Optional/RMStoreAppReceiptVerifier.{h,m}', 'RMStore/Optional/RMAppReceipt.{h,m}'
 
     arv.dependency 'openssl-ios-bitcode'
-
-    arv.vendored_libraries = '${PODS_ROOT}/openssl-ios-bitcode/libcrypto.a', '${PODS_ROOT}/openssl-ios-bitcode/libssl.a'
-    arv.libraries = 'ssl', 'crypto'
-    arv.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/openssl-ios-bitcode/openssl/**", 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/openssl-ios-bitcode/" } 
+#    arv.vendored_libraries = '${PODS_ROOT}/openssl-ios-bitcode/libcrypto.a', '${PODS_ROOT}/openssl-ios-bitcode/libssl.a'
+#    arv.libraries = 'ssl', 'crypto'
+#    arv.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/openssl-ios-bitcode/openssl/**", 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/openssl-ios-bitcode/" } 
 
     
   end
